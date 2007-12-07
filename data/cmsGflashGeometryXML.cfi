@@ -27,7 +27,6 @@ es_source = XMLIdealGeometryESSource
                 "Geometry/HcalCommonData/data/hcalendcapalgo.xml",
                 "Geometry/HcalCommonData/data/hcalouteralgo.xml",
                 "Geometry/HcalCommonData/data/hcalforwardalgo.xml",
-                "Geometry/HcalCommonData/data/hcalforwardfibre.xml",
                 "Geometry/HcalCommonData/data/hcalforwardmaterial.xml",
 
                 # ECAL SpecPar selection to define sensitive volumes 
@@ -44,14 +43,13 @@ es_source = XMLIdealGeometryESSource
                 "Geometry/CMSCommonData/data/MagneticFieldVolumes.xml",
 
                 # Production cuts... Simulation only!!! 
-                #"Geometry/HcalSimData/data/HcalProdCuts.xml",
-                #"Geometry/EcalSimData/data/EcalProdCuts.xml",
+#                "Geometry/HcalSimData/data/HcalProdCuts.xml",
+#                "Geometry/EcalSimData/data/EcalProdCuts.xml",
+# Production cuts for Gflash specific - define envelopes
+                "SimG4Core/GFlash/data/gflashCaloProdCuts.xml",
 
                 # Needed for magnetic field simulation.
-                "Geometry/CMSCommonData/data/FieldParameters.xml",
-
-                # Needed for GFlash
-                "SimG4Core/GFlash/data/ShowerModelVolumes.xml"
+                "Geometry/CMSCommonData/data/FieldParameters.xml"
 
    }
    string rootNodeName = "cms:OCMS"
